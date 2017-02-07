@@ -13,7 +13,7 @@ var connector = new builder.ChatConnector({
     appPassword: process.env.MICROSOFT_APP_PASSWORD,
 });
 var bot = new builder.UniversalBot(connector);
-server.post('https://github.com/jos38/carrentalbot.git/api/messages', connector.listen());
+server.post('/api/messages', connector.listen());
 
  //OPCIONES DE MENU DE BIENVENIDA
     const reservar = 'Reservar';
